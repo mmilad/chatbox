@@ -1,0 +1,12 @@
+<md-toolbar>
+  <span class="filler"></span>
+  <button md-button [mdMenuTriggerFor]="menu">
+    <md-icon>more_vert</md-icon>
+  </button>
+  <md-menu #menu="mdMenu">
+    <button md-menu-item *ngIf="!user.email" routeTo="auth/login">login</button>
+    <button md-menu-item *ngIf="!user.email" routeTo="auth/register">register</button>
+    <button md-menu-item *ngIf="!user.email" routeTo="auth/reset">reset password</button>
+    <button md-menu-item *ngIf="user.email" (click)="logout()" routeTo="auth/reset">logout</button>
+  </md-menu>
+</md-toolbar>
