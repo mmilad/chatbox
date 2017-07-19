@@ -16,7 +16,14 @@ export class LoginComponent  implements OnInit {
   constructor(
     private as: AuthService,
     private router: Router
-  ) { }
+  ) {
+    let infoSubscription = as.getLoginInfo().subscribe(info => {
+      infoSubscription.unsubscribe();
+      if(info) {
+          this.router.navigate(['home']);
+      }
+    })
+  }
 
   login() {
     this.as.login(this.email, this.password)

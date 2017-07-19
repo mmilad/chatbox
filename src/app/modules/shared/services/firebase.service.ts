@@ -23,12 +23,8 @@ export class FirebaseService {
     return this.auth.auth.currentUser;
   };
 
-  public get mandateList() {
-    return this.db.list(`${this.user.uid}/mandate/`);
-  }
-
-  addMandat(mandat) {
-    this.mandateList.push({ name: mandat });
+  public getList(list) {
+    return this.db.list(list);
   }
 
   getAuth() {

@@ -33,9 +33,7 @@ import { SharedModule } from './modules/shared/shared.module';
     RouterModule,
     SharedModule
   ],
-  providers: [
-    
-  ],
+  providers: [],
   exports: [
   ],
   bootstrap: [AppComponent]

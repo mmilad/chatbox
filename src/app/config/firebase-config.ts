@@ -1,8 +1,8 @@
 export const FirebaseConfig = {
-    apiKey: "AIzaSyDWENhgpkRN3OcKjliL-SEhrq21Gn7vix4",
-    authDomain: "community-1d2a2.firebaseapp.com",
-    databaseURL: "https://community-1d2a2.firebaseio.com",
-    projectId: "community-1d2a2",
-    storageBucket: "community-1d2a2.appspot.com",
-    messagingSenderId: "479800108779"
+    apiKey: "AIzaSyDNf-V3Php_hTVazhhym5pExyGWaUgdD00",
+    authDomain: "chatbox-758ef.firebaseapp.com",
+    databaseURL: "https://chatbox-758ef.firebaseio.com",
+    projectId: "chatbox-758ef",
+    storageBucket: "chatbox-758ef.appspot.com",
+    messagingSenderId: "310246937584"
 };

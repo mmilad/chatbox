@@ -1,0 +1,11 @@
+:host {
+    .chatWindow {
+        display: flex;
+    }
+    .inputCard {
+        padding: 0 24px;
+        md-input-container {
+            width: 100%;
+        }
+    }
+}

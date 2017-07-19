@@ -33,6 +33,10 @@ export class UserService {
     return this.user;
   }
   
+  getLoginInfo() {
+    return this.fs.login$;
+  }
+
   login(email, password) {
     return this.fs.login(email, password);
   }

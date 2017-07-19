@@ -21,4 +21,8 @@ export class AuthService {
   resetPassword(email) {
     return this.us.resetPassword(email);
   }
+
+  getLoginInfo() {
+    return this.us.getLoginInfo();
+  }
 }

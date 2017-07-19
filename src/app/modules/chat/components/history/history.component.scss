@@ -1,0 +1,14 @@
+:host {
+    width: 80%;
+    display: block;
+    .chatContent {
+        min-height: 500px;
+        ul {
+            padding: 0;
+            li {
+                display: block;
+                white-space: pre-line;
+            }
+        }
+    }
+}
